@@ -5,6 +5,7 @@ import { useRef, useEffect } from 'react'
 
 // Components
 import ConnectingLine from './components/ConnectingLine';
+import Navbar from './components/Navbar';
 import Hero from "./components/Hero";
 import BoldStatic from "./components/BoldStatic";
 import AboutSection from "./components/AboutSection";
@@ -38,8 +39,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-dark relative">
+    <main className="bg-[#fafafa] relative">
       <ConnectingLine />
+      <Navbar />
       <div className="relative z-10">
         <Hero />
         <BoldStatic />

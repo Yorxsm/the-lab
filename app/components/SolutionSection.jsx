@@ -31,8 +31,8 @@ const outputs = [
 
 const SolutionSection = () => {
     return (
-        <section id="ecosystem" className="section bg-[#f8fafc]">
-            <div className="section-container">
+        <section id="ecosystem" className="section bg-[#f8fafc] py-16 md:py-32">
+            <div className="max-w-7xl mx-auto px-6 md:px-12">
 
                 {/* Header */}
                 <motion.div
@@ -40,10 +40,10 @@ const SolutionSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="max-w-3xl mb-20"
+                    className="max-w-3xl mb-12 md:mb-20"
                 >
-                    <span className="pill-tag mb-6 inline-block">Operations</span>
-                    <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight text-[#0a0a0a]">
+                    <span className="pill-tag mb-4 md:mb-6 inline-block">Operations</span>
+                    <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-[#0a0a0a]">
                         From Competitions<br />
                         to <span className="text-[#ff6b35]">Companies.</span>
                     </h2>
@@ -58,20 +58,20 @@ const SolutionSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="grid md:grid-cols-12 gap-8 py-12 border-b border-[#e2e8f0] group"
+                            className="grid md:grid-cols-12 gap-4 md:gap-8 py-8 md:py-12 border-b border-[#e2e8f0] group"
                         >
                             <div className="md:col-span-2">
-                                <span className="font-display text-6xl md:text-7xl text-[#e2e8f0] group-hover:text-[#ff6b35] transition-colors duration-500">
+                                <span className="font-display text-5xl md:text-7xl text-[#e2e8f0] group-hover:text-[#ff6b35] transition-colors duration-500">
                                     {step.number}
                                 </span>
                             </div>
                             <div className="md:col-span-4">
-                                <h3 className="font-display text-2xl md:text-3xl text-[#0a0a0a] mb-2">
+                                <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-[#0a0a0a] mb-2">
                                     {step.title}
                                 </h3>
                             </div>
                             <div className="md:col-span-6">
-                                <p className="text-[#64748b] text-lg leading-relaxed">
+                                <p className="text-[#64748b] text-base md:text-lg leading-relaxed">
                                     {step.description}
                                 </p>
                             </div>
@@ -85,7 +85,7 @@ const SolutionSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className="mt-20 flex flex-wrap gap-3"
+                    className="mt-12 md:mt-20 flex flex-wrap gap-3"
                 >
                     <span className="text-xs font-mono uppercase tracking-widest text-[#64748b] mr-4 self-center">Outputs:</span>
                     {outputs.map((output, index) => (

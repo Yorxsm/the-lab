@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import Navbar from './Navbar';
 
 const Hero = () => {
     const taglineRef = useRef(null);
@@ -13,50 +12,54 @@ const Hero = () => {
     const scrollRef = useRef(null);
 
     useEffect(() => {
-        // Main content animation
-        const tl = gsap.timeline({
-            defaults: { ease: "power4.out" }
+        let ctx = gsap.context(() => {
+            // Main content animation
+            const tl = gsap.timeline({
+                defaults: { ease: "power4.out" }
+            });
+
+            tl.fromTo(panelRef.current,
+                { opacity: 0, scale: 0.95, y: 20 },
+                { opacity: 1, scale: 1, y: 0, duration: 1.2 }
+            )
+                .fromTo(taglineRef.current,
+                    { opacity: 0, x: -20 },
+                    { opacity: 1, x: 0, duration: 0.8 },
+                    "-=0.8"
+                )
+                .fromTo(headlineRef.current,
+                    { opacity: 0, y: 30 },
+                    { opacity: 1, y: 0, duration: 1 }
+                )
+                .fromTo(descRef.current,
+                    { opacity: 0 },
+                    { opacity: 1, duration: 0.8 },
+                    "-=0.5"
+                )
+                .fromTo(ctaRef.current,
+                    { opacity: 0, y: 15 },
+                    { opacity: 1, y: 0, duration: 0.6 },
+                    "-=0.3"
+                );
+
+            // Scroll indicator animation
+            if (scrollRef.current) {
+                gsap.to(scrollRef.current.querySelector('.scroll-dot'), {
+                    y: 24,
+                    duration: 1.5,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "power2.inOut"
+                });
+            }
         });
 
-        tl.fromTo(panelRef.current,
-            { opacity: 0, scale: 0.95, y: 20 },
-            { opacity: 1, scale: 1, y: 0, duration: 1.2 }
-        )
-            .fromTo(taglineRef.current,
-                { opacity: 0, x: -20 },
-                { opacity: 1, x: 0, duration: 0.8 },
-                "-=0.8"
-            )
-            .fromTo(headlineRef.current,
-                { opacity: 0, y: 30 },
-                { opacity: 1, y: 0, duration: 1 }
-            )
-            .fromTo(descRef.current,
-                { opacity: 0 },
-                { opacity: 1, duration: 0.8 },
-                "-=0.5"
-            )
-            .fromTo(ctaRef.current,
-                { opacity: 0, y: 15 },
-                { opacity: 1, y: 0, duration: 0.6 },
-                "-=0.3"
-            );
-
-        // Scroll indicator animation
-        if (scrollRef.current) {
-            gsap.to(scrollRef.current.querySelector('.scroll-dot'), {
-                y: 24,
-                duration: 1.5,
-                repeat: -1,
-                yoyo: true,
-                ease: "power2.inOut"
-            });
-        }
+        return () => ctx.revert();
     }, []);
 
     return (
         <div className="relative w-full min-h-screen bg-[#0a0a0a] overflow-hidden flex flex-col">
-            <Navbar />
+            {/* Navbar removed - moved to page.js layout */}
 
             {/* Sci-Fi Background Effects - No Glow */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -139,7 +142,7 @@ const Hero = () => {
                     {/* CTA Buttons */}
                     <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="#ecosystem" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 bg-[#ff6b35] text-white font-display font-semibold rounded-md hover:bg-[#e55a2a] transition-colors text-sm md:text-base">
-                            See How It Works
+                            See Operations
                         </a>
                         <a href="mailto:admin@byhavi.tech" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 bg-transparent text-white font-display font-semibold border-2 border-white/30 rounded-md hover:bg-white/10 hover:border-white/50 transition-all text-sm md:text-base">
                             Partner With Us
@@ -148,7 +151,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Animated Scroll Indicator - Adjusted position */}
+            {/* Animated Scroll Indicator */}
             <div ref={scrollRef} className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-20">
                 <div className="flex flex-col items-center">
                     <span className="text-[10px] md:text-xs font-mono uppercase tracking-widest text-white/40 mb-2 md:mb-4">explore</span>

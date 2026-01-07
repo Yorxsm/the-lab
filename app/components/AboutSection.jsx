@@ -23,7 +23,7 @@ const AboutSection = () => {
                             <div className="hidden sm:block absolute inset-0 bg-gradient-to-br from-[#ff6b35]/10 to-transparent rounded-3xl transform -rotate-1" />
 
                             {/* Main Card */}
-                            <div className="relative bg-white rounded-2xl md:rounded-3xl p-6 md:p-10 lg:p-12 border border-[#e2e8f0] shadow-sm md:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)]">
+                            <div className="relative bg-white rounded-2xl md:rounded-3xl p-6 md:p-10 lg:p-12 border border-[#e2e8f0] shadow-sm md:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] overflow-hidden sm:overflow-visible">
                                 {/* Accent Line */}
                                 <div className="absolute top-0 left-6 right-6 md:left-8 md:right-8 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff6b35]/30 rounded-full" />
 
@@ -32,12 +32,12 @@ const AboutSection = () => {
                                     Our Mission
                                 </span>
 
-                                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-tight text-[#0a0a0a] mb-6 md:mb-8">
+                                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-[#0a0a0a] mb-6 md:mb-8 break-words">
                                     Connecting Talent<br />
                                     to <span className="text-[#ff6b35]">Opportunity.</span>
                                 </h2>
 
-                                <div className="space-y-6 text-[#64748b] text-base md:text-lg leading-relaxed">
+                                <div className="space-y-6 text-[#64748b] text-sm sm:text-base md:text-lg leading-relaxed">
                                     <div className="flex gap-4">
                                         <span className="w-1 bg-[#e2e8f0] rounded-full flex-shrink-0 mt-1" />
                                         <div>
@@ -57,7 +57,7 @@ const AboutSection = () => {
 
                                 {/* Bottom Quote */}
                                 <div className="mt-8 pt-6 border-t border-[#e2e8f0]">
-                                    <p className="text-[#0a0a0a] font-medium text-base md:text-lg">
+                                    <p className="text-[#0a0a0a] font-medium text-sm sm:text-base md:text-lg">
                                         Builders build. Buyers get local solutions. <span className="text-[#ff6b35]">Africa grows.</span>
                                     </p>
                                 </div>
@@ -71,18 +71,18 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
-                        className="relative flex justify-center mt-8 lg:mt-0"
+                        className="relative flex justify-center mt-8 lg:mt-0 px-2 sm:px-0"
                     >
-                        {/* Minimal Frame */}
-                        <div className="relative w-full max-w-sm">
-                            {/* Frame Background */}
-                            <div className="absolute -inset-2 md:-inset-4 border-2 border-[#0a0a0a] rounded-xl md:rounded-2xl">
-                                {/* Corner Dots */}
-                                <div className="absolute -top-1.5 -left-1.5 w-3 h-3 bg-[#ff6b35] rounded-full" />
-                                <div className="absolute -top-1.5 -right-1.5 w-3 h-3 bg-[#0a0a0a] rounded-full" />
-                                <div className="absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-[#0a0a0a] rounded-full" />
-                                <div className="absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-[#ff6b35] rounded-full" />
-                            </div>
+                        {/* Minimal Frame with specific max-width to ensure it fits */}
+                        <div className="relative w-full max-w-[300px] sm:max-w-sm ml-2 md:ml-0">
+                            {/* Frame Background - Scale down slightly on mobile to prevent clipping with negative margins */}
+                            <div className="absolute -inset-2 md:-inset-4 border-2 border-[#0a0a0a] rounded-xl md:rounded-2xl" />
+
+                            {/* Corner Dots - Positioned manually */}
+                            <div className="absolute -top-1.5 -left-1.5 w-3 h-3 bg-[#ff6b35] rounded-full z-10" />
+                            <div className="absolute -top-1.5 -right-1.5 w-3 h-3 bg-[#0a0a0a] rounded-full z-10" />
+                            <div className="absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-[#0a0a0a] rounded-full z-10" />
+                            <div className="absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-[#ff6b35] rounded-full z-10" />
 
                             {/* Image Container */}
                             <div className="relative bg-gradient-to-br from-[#f8fafc] to-[#e2e8f0] rounded-lg md:rounded-xl p-6 md:p-12">

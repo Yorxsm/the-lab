@@ -7,14 +7,19 @@ const BoldStatic = () => {
   const marqueeRef = useRef(null);
 
   useEffect(() => {
-    if (marqueeRef.current) {
-      gsap.to(marqueeRef.current, {
-        xPercent: -50,
-        ease: "none",
-        duration: 20,
-        repeat: -1,
-      });
-    }
+    let ctx = gsap.context(() => {
+      // Marquee animation
+      if (marqueeRef.current) {
+        gsap.to(marqueeRef.current, {
+          xPercent: -50,
+          ease: "none",
+          duration: 20,
+          repeat: -1,
+        });
+      }
+    }, marqueeRef); // Scope to ref
+
+    return () => ctx.revert(); // Cleanup!
   }, []);
 
   return (
@@ -23,14 +28,17 @@ const BoldStatic = () => {
         <div ref={marqueeRef} className="marquee-track flex whitespace-nowrap">
           {/* Content repeated for smooth loop */}
           {[...Array(4)].map((_, i) => (
-            <React.Fragment key={i}>
-              <span className="text-3xl md:text-5xl font-display uppercase tracking-tight mx-4 md:mx-8 text-[#0a0a0a]">
-                NEW EVENTS
+            <div key={i} className="flex items-center">
+              <span className="text-xl sm:text-2xl md:text-5xl font-display uppercase tracking-tight mx-4 md:mx-8 text-[#0a0a0a]">
+                • NEW EVENT
               </span>
-              <span className="text-3xl md:text-5xl font-display uppercase tracking-tight mx-4 md:mx-8 text-[#ff6b35]">
-                •
+              <span className="text-xl sm:text-2xl md:text-5xl font-display uppercase tracking-tight mx-4 md:mx-8 text-[#ff6b35]">
+                • FEB. 26
               </span>
-            </React.Fragment>
+              <span className="text-xl sm:text-2xl md:text-5xl font-display uppercase tracking-tight mx-4 md:mx-8 text-[#0a0a0a]">
+                • BENIN CITY
+              </span>
+            </div>
           ))}
         </div>
       </div>
