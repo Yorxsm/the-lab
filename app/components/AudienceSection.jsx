@@ -2,30 +2,31 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { GraduationIcon, UniversityIcon, TargetIcon, GovernmentIcon, ChartIcon } from './icons';
 
 const audiences = [
     {
-        icon: "🎓",
+        icon: GraduationIcon,
         title: "Students & Engineers",
         description: "Build real robots, gain exposure, and launch startups"
     },
     {
-        icon: "🏛️",
+        icon: UniversityIcon,
         title: "Universities",
         description: "Offer world-class, hands-on STEM experiences"
     },
     {
-        icon: "🎯",
+        icon: TargetIcon,
         title: "Sponsors & Brands",
         description: "Reach engaged, future-facing audiences"
     },
     {
-        icon: "🏢",
+        icon: GovernmentIcon,
         title: "Governments & Institutions",
         description: "Retain talent and grow local innovation"
     },
     {
-        icon: "💰",
+        icon: ChartIcon,
         title: "Investors",
         description: "Access early-stage, high-potential hardware IP"
     }
@@ -57,8 +58,8 @@ const AudienceSection = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="glass-card p-6 text-center group"
                         >
-                            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                                {audience.icon}
+                            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 text-[#ff6b35]">
+                                <audience.icon size="2em" />
                             </div>
                             <h3 className="text-lg font-semibold text-white mb-2 font-heading">
                                 {audience.title}

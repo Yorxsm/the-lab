@@ -5,22 +5,22 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
     {
-        quote: "We don't just need software engineers; we need builders who understand our local infrastructure. eXhibot delivered legitimate hardware solutions that work.",
-        author: "Tunde O.",
-        role: "CTO, Manufacturing Firm",
-        highlight: "legitimate hardware solutions"
+        quote: "eXhibot stands as a beacon for the future of sustainable innovations. It aligns with the Ministry's goals of a technology-driven future for Edo State and the nation at large.",
+        author: "Yuwa Naps",
+        role: "Permanent Secretary, Min. of Science & Tech, Edo State",
+        highlight: "beacon for the future"
     },
     {
-        quote: "The bootcamps and challenges gave me access to equipment I never had at university. Now I'm building patentable tech right here in Lagos.",
-        author: "Sarah A.",
-        role: "Robotics Engineer",
-        highlight: "patentable tech"
+        quote: "eXhibot exists at such a time where the right knowledge is available, with the right resources and human capital to propel the Nigerian tech and industrial scene.",
+        author: "Dr. Edoghogho Olaye",
+        role: "Director of AI & Robotics, University of Benin",
+        highlight: "right knowledge"
     },
     {
-        quote: "eXhibot is filling a critical gap. They are turning student projects into enterprise-grade products. This is the future of African tech.",
-        author: "Dr. K. Mensah",
-        role: "University Partner",
-        highlight: "enterprise-grade products"
+        quote: "We would love for eXhibot to engage our students practically. The brilliance and vision displayed by this team is exactly what Nigerian innovation needs.",
+        author: "Prof. Lawrence Ezemonye",
+        role: "Vice Chancellor, Igbinedion University Okada",
+        highlight: "engage students practically"
     }
 ];
 

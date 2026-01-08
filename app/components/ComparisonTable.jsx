@@ -2,11 +2,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { UsersIcon, BoltIcon, GlobeIcon, CoinIcon } from './icons';
 
 const competitors = [
-    { name: "BattleBots", type: "Entertainment", product: false, ip: false },
-    { name: "FIRST Robotics", type: "Education", product: true, ip: false },
-    { name: "Accelerators", type: "Software", product: true, ip: false },
+    { name: "BattleBots", type: "Entertainment first", desc: "No commercialization", product: false, ip: false },
+    { name: "FIRST Robotics", type: "Education first", desc: "IP remains academic", product: true, ip: false },
+    { name: "Accelerators", type: "Software-optimized", desc: "Hardware light", product: true, ip: false },
 ];
 
 const exhibot = {
@@ -17,10 +18,10 @@ const exhibot = {
 };
 
 const advantages = [
-    { icon: "👥", title: "Untapped Talent", stat: "300+", desc: "Engineers onboarded" },
-    { icon: "⚡", title: "Competitive Edge", stat: "3x", desc: "Faster iteration" },
-    { icon: "🌍", title: "Local Solutions", stat: "100%", desc: "Built for Africa" },
-    { icon: "💰", title: "Cost Advantage", stat: "60%", desc: "Lower R&D costs" },
+    { icon: UsersIcon, title: "Untapped Talent", stat: "300+", desc: "Engineers onboarded" },
+    { icon: BoltIcon, title: "Competitive Edge", stat: "3x", desc: "Faster iteration" },
+    { icon: GlobeIcon, title: "Local Solutions", stat: "100%", desc: "Built for Africa" },
+    { icon: CoinIcon, title: "Cost Advantage", stat: "60%", desc: "Lower R&D costs" },
 ];
 
 const ComparisonTable = () => {
@@ -58,10 +59,10 @@ const ComparisonTable = () => {
                     >
                         <h3 className="font-mono text-xs uppercase tracking-widest text-[#64748b] mb-4 md:mb-6 text-center lg:text-left">The Competition</h3>
                         {competitors.map((c, i) => (
-                            <div key={i} className="flex items-center justify-between p-4 md:p-5 bg-white border border-[#e2e8f0] rounded-xl opacity-80 md:opacity-60">
+                            <div key={i} className="flex flex-col sm:flex-row sm:items-center justify-between p-4 md:p-5 bg-white border border-[#e2e8f0] rounded-xl opacity-80 md:opacity-60 gap-3">
                                 <div>
                                     <p className="font-display text-[#64748b] text-sm md:text-base">{c.name}</p>
-                                    <p className="text-[10px] md:text-xs text-[#94a3b8]">{c.type}</p>
+                                    <p className="text-[10px] md:text-xs text-[#94a3b8]">{c.type} · <span className="text-[#94a3b8]/80">{c.desc}</span></p>
                                 </div>
                                 <div className="flex gap-2 md:gap-4 text-xs md:text-sm">
                                     <span className={c.product ? 'text-[#64748b]' : 'text-[#e2e8f0]'}>
@@ -130,7 +131,7 @@ const ComparisonTable = () => {
                                 transition={{ duration: 0.4, delay: 0.4 + i * 0.1 }}
                                 className="p-4 md:p-6 bg-white border border-[#e2e8f0] rounded-xl text-center hover:border-[#ff6b35]/30 hover:shadow-lg transition-all"
                             >
-                                <span className="text-2xl md:text-3xl mb-2 md:mb-3 block">{adv.icon}</span>
+                                <span className="text-2xl md:text-3xl mb-2 md:mb-3 block text-[#ff6b35]"><adv.icon size="1.5em" /></span>
                                 <p className="font-display text-2xl md:text-3xl text-[#0a0a0a] mb-1">{adv.stat}</p>
                                 <p className="text-[10px] md:text-xs text-[#64748b]">{adv.desc}</p>
                             </motion.div>

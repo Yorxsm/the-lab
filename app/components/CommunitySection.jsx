@@ -2,8 +2,9 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import { GamepadIcon, BrainIcon, JoystickIcon, GearIcon, ChatIcon, AntennaIcon } from './icons';
 
-const particleIcons = ["🎮", "🧠", "🕹️", "⚙️", "💬", "📡"];
+const ParticleIcons = [GamepadIcon, BrainIcon, JoystickIcon, GearIcon, ChatIcon, AntennaIcon];
 
 const CommunitySection = () => {
   const sectionRef = useRef(null);
@@ -17,7 +18,7 @@ const CommunitySection = () => {
 
   useEffect(() => {
     setIsMounted(true);
-    
+
     // One-time animations on mount
     gsap.fromTo(
       sectionRef.current,
@@ -77,16 +78,19 @@ const CommunitySection = () => {
     >
       {/* Floating Gamepad Particles */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        {Array.from({ length: 18 }).map((_, i) => (
-          <div
-            key={i}
-            ref={(el) => (particlesRef.current[i] = el)}
-            className="absolute text-gray-400 text-xl opacity-40 select-none"
+        {Array.from({ length: 18 }).map((_, i) => {
+          const IconComponent = ParticleIcons[i % ParticleIcons.length];
+          return (
+            <div
+              key={i}
+              ref={(el) => (particlesRef.current[i] = el)}
+              className="absolute text-gray-400 opacity-40 select-none"
             // Position will be set by GSAP in useEffect
-          >
-            {particleIcons[i % particleIcons.length]}
-          </div>
-        ))}
+            >
+              <IconComponent size="24px" />
+            </div>
+          );
+        })}
       </div>
 
       {/* Cryptic Background Logo */}

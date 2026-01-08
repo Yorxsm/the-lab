@@ -43,8 +43,10 @@ const SolutionSection = () => {
                     className="max-w-3xl mb-12 md:mb-20"
                 >
                     <span className="pill-tag mb-4 md:mb-6 inline-block">Operations</span>
-                    <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-[#0a0a0a]">
-                        From Competitions<br />
+                    <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-[#0a0a0a] break-words">
+                        <span className="block sm:inline">From Competitions</span>
+                        <span className="hidden sm:inline"><br /></span>
+                        <span className="sm:hidden"> </span>
                         to <span className="text-[#ff6b35]">Companies.</span>
                     </h2>
                 </motion.div>

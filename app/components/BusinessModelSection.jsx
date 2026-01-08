@@ -2,11 +2,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { TicketIcon, HandshakeIcon, WrenchIcon } from './icons';
 
 const revenueStreams = [
-    { icon: "🎫", title: "Event tickets" },
-    { icon: "🤝", title: "Sponsorships" },
-    { icon: "🔧", title: "Robotics kits & training programs" },
+    { icon: TicketIcon, title: "Event tickets" },
+    { icon: HandshakeIcon, title: "Sponsorships" },
+    { icon: WrenchIcon, title: "Robotics kits & training programs" },
 ];
 
 const BusinessModelSection = () => {
@@ -57,7 +58,7 @@ const BusinessModelSection = () => {
                                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                                 className="glass-card p-6 text-center"
                             >
-                                <div className="text-4xl mb-4">{stream.icon}</div>
+                                <div className="text-4xl mb-4 text-[#ff6b35]"><stream.icon size="2em" /></div>
                                 <h3 className="text-lg font-semibold text-white">{stream.title}</h3>
                             </motion.div>
                         ))}

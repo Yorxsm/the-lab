@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FactoryIcon, RobotIcon } from './icons';
 
 const ProductsSection = () => {
     return (
@@ -58,11 +59,12 @@ const ProductsSection = () => {
                                 <iframe
                                     width="100%"
                                     height="100%"
-                                    src="https://www.youtube.com/embed/_nYZW9wfKhs?autoplay=1&mute=1&loop=1&playlist=_nYZW9wfKhs&controls=0&showinfo=0"
+                                    src="https://www.youtube.com/embed/_nYZW9wfKhs?autoplay=1&mute=1&loop=1&playlist=_nYZW9wfKhs&controls=0&showinfo=0&playsinline=1&rel=0&modestbranding=1"
                                     title="eXhibot.app Demo"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
+                                    playsInline
                                     className="w-full h-full object-cover scale-150 md:scale-110"
                                 />
                                 {/* Overlay */}
@@ -89,7 +91,7 @@ const ProductsSection = () => {
 
                                 {/* Bottom */}
                                 <div>
-                                    <h3 className="font-display text-3xl md:text-5xl lg:text-6xl text-white mb-2 md:mb-3">
+                                    <h3 className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white mb-2 md:mb-3">
                                         eXhibot.app
                                     </h3>
                                     <p className="text-white/60 text-sm md:text-lg max-w-lg mb-4 md:mb-6 leading-relaxed">
@@ -117,7 +119,7 @@ const ProductsSection = () => {
                     >
                         <div className="h-full min-h-[220px] md:min-h-[280px] p-6 md:p-8 rounded-3xl bg-gradient-to-br from-white/5 to-white/0 border border-white/10 flex flex-col justify-between hover:border-[#ff6b35]/50 transition-all">
                             <div>
-                                <span className="text-4xl md:text-5xl mb-4 block">🏭</span>
+                                <span className="text-4xl md:text-5xl mb-4 block text-[#ff6b35]"><FactoryIcon size="1.5em" /></span>
                                 <span className="font-mono text-[10px] uppercase tracking-widest text-[#ff6b35]">In Development</span>
                             </div>
                             <div>
@@ -136,7 +138,7 @@ const ProductsSection = () => {
                     >
                         <div className="h-full min-h-[220px] md:min-h-[280px] p-6 md:p-8 rounded-3xl bg-gradient-to-br from-[#ff6b35]/10 to-transparent border border-[#ff6b35]/20 flex flex-col justify-between hover:border-[#ff6b35]/50 transition-all">
                             <div>
-                                <span className="text-4xl md:text-5xl mb-4 block">🤖</span>
+                                <span className="text-4xl md:text-5xl mb-4 block text-[#ff6b35]"><RobotIcon size="1.5em" /></span>
                                 <span className="font-mono text-[10px] uppercase tracking-widest text-[#ff6b35]">On Request</span>
                             </div>
                             <div>

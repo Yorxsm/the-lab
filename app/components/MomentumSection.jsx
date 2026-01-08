@@ -44,17 +44,17 @@ const MomentumSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.1 }}
-                    className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
+                    className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-16"
                 >
                     {stats.map((stat, index) => (
                         <div
                             key={index}
-                            className="p-6 bg-white border border-[#e2e8f0] rounded-2xl text-center hover:border-[#0a0a0a] transition-colors"
+                            className="p-4 md:p-6 bg-white border border-[#e2e8f0] rounded-2xl text-center hover:border-[#0a0a0a] transition-colors"
                         >
-                            <div className="font-display text-4xl md:text-5xl text-[#0a0a0a] mb-2">
+                            <div className="font-display text-3xl sm:text-4xl md:text-5xl text-[#0a0a0a] mb-1 md:mb-2">
                                 {stat.value}
                             </div>
-                            <div className="text-xs font-mono uppercase tracking-widest text-[#64748b]">
+                            <div className="text-[10px] sm:text-xs font-mono uppercase tracking-wider md:tracking-widest text-[#64748b] leading-tight">
                                 {stat.label}
                             </div>
                         </div>
@@ -85,9 +85,9 @@ const MomentumSection = () => {
                                     {/* Hover Overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
                                     {/* Label */}
-                                    <div className="absolute bottom-4 left-4 right-4">
-                                        <span className="text-xs font-mono uppercase tracking-widest text-[#ff6b35]">0{index + 1}</span>
-                                        <p className="font-display text-white text-lg">{image.label}</p>
+                                    <div className="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4">
+                                        <span className="text-[10px] sm:text-xs font-mono uppercase tracking-wider sm:tracking-widest text-[#ff6b35]">0{index + 1}</span>
+                                        <p className="font-display text-white text-sm sm:text-lg truncate">{image.label}</p>
                                     </div>
                                 </div>
                             ))}
@@ -99,7 +99,7 @@ const MomentumSection = () => {
                                 <span className="text-white font-medium">Real events. Real engineers. Real products.</span>
                             </p>
                             <span className="text-xs font-mono uppercase tracking-widest text-[#ff6b35]">
-                                eXhibot 2024-2025
+                                eXhibot 2025
                             </span>
                         </div>
                     </div>

@@ -15,6 +15,7 @@ import MomentumSection from "./components/MomentumSection";
 import ComparisonTable from "./components/ComparisonTable";
 import VisionSection from "./components/VisionSection";
 import TestimonialSection from "./components/TestimonialSection";
+import PartnersSection from "./components/PartnersSection";
 import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 
@@ -52,6 +53,7 @@ export default function Home() {
         <ComparisonTable />
         <VisionSection />
         <TestimonialSection />
+        <PartnersSection />
         <CTASection />
         <Footer />
       </div>

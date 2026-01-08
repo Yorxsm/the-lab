@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { UsersIcon } from './icons';
 
 const TeamSection = () => {
     return (
@@ -43,8 +44,8 @@ const TeamSection = () => {
                     </p>
 
                     <div className="flex items-center gap-6 mb-8 p-6 glass-card-subtle rounded-xl">
-                        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center text-3xl flex-shrink-0">
-                            👤
+                        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center text-white flex-shrink-0">
+                            <UsersIcon size="2em" />
                         </div>
                         <div>
                             <h3 className="text-xl font-semibold text-white font-heading">
