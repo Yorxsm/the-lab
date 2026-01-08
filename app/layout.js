@@ -26,10 +26,10 @@ export const metadata = {
     siteName: "eXhibot",
     images: [
       {
-        url: '/images/hero-02.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'eXhibot Robotics Innovation',
+        alt: 'eXhibot - Building the Future. Made in Africa.',
       },
     ],
     locale: 'en_US',
@@ -39,7 +39,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: "eXhibot | Africa's Hardware Innovation Studio",
     description: "We are building the operating system for African hardware innovation.",
-    images: ['/images/hero-02.jpg'],
+    images: ['/og-image.png'],
     creator: '@exhibotng',
   },
   icons: {
