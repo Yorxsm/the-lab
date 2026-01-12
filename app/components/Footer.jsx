@@ -43,8 +43,8 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-4 lg:col-span-3">
             <h4 className="font-mono text-xs uppercase tracking-widest text-[#0a0a0a] mb-6">Contact</h4>
             <p className="text-[#64748b] text-sm md:text-base mb-2">General Inquiries</p>
-            <a href="mailto:admin@byhavi.tech" className="text-[#0a0a0a] font-medium hover:text-[#ff6b35] transition-colors text-sm md:text-base block mb-6 break-words">
-              admin@byhavi.tech
+            <a href="mailto:joel@exhibot.ng" className="text-[#0a0a0a] font-medium hover:text-[#ff6b35] transition-colors text-sm md:text-base block mb-6 break-words">
+              joel@exhibot.ng
             </a>
 
             <div className="flex gap-4">

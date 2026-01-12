@@ -76,7 +76,7 @@ const Navbar = () => {
                                     {link.label}
                                 </Link>
                             ))}
-                            <a href="mailto:admin@byhavi.tech" className="pill-tag pill-tag--active">
+                            <a href="mailto:joel@exhibot.ng" className="pill-tag pill-tag--active">
                                 Contact
                             </a>
                         </div>
@@ -111,7 +111,7 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <a
-                        href="mailto:admin@byhavi.tech"
+                        href="mailto:joel@exhibot.ng"
                         className="btn-primary mt-4"
                         onClick={() => setMobileMenuOpen(false)}
                     >

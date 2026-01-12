@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: "How can I partner with eXhibot?",
-    answer: "We welcome partnerships from enterprises needing solutions, governments with digital transformation goals, universities contributing talent, and investors backing Africa's hardware revolution. Reach out at admin@byhavi.tech."
+    answer: "We welcome partnerships from enterprises needing solutions, governments with digital transformation goals, universities contributing talent, and investors backing Africa's hardware revolution. Reach out at joel@exhibot.ng."
   }
 ];
 
@@ -65,8 +65,8 @@ const FaqSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
               className={`group overflow-hidden rounded-2xl border transition-all duration-300 ${openIndex === index
-                  ? 'bg-white border-[#0a0a0a] shadow-lg'
-                  : 'bg-white border-[#e2e8f0] hover:border-[#0a0a0a]/30'
+                ? 'bg-white border-[#0a0a0a] shadow-lg'
+                : 'bg-white border-[#e2e8f0] hover:border-[#0a0a0a]/30'
                 }`}
             >
               <button
@@ -110,10 +110,10 @@ const FaqSection = () => {
         >
           <p className="text-[#64748b] text-sm mb-4">Still have questions?</p>
           <a
-            href="mailto:admin@byhavi.tech"
+            href="mailto:joel@exhibot.ng"
             className="inline-flex items-center gap-2 text-[#ff6b35] hover:text-[#e55a2a] transition-colors font-medium"
           >
-            Contact us at admin@byhavi.tech <span>→</span>
+            Contact us at joel@exhibot.ng <span>→</span>
           </a>
         </motion.div>
       </div>
