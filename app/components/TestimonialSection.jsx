@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const testimonials = [
     {
         quote: "eXhibot stands as a beacon for the future of sustainable innovations. It aligns with the Ministry's goals of a technology-driven future for Edo State and the nation at large.",
-        author: "Yuwa Naps",
+        author: "Engr. Jonathan Ukpebor",
         role: "Permanent Secretary, Min. of Science & Tech, Edo State",
         highlight: "beacon for the future"
     },
