@@ -94,7 +94,7 @@ const AboutSection = () => {
 
                                 {/* Floating Label */}
                                 <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-4 py-2 bg-[#0a0a0a] text-white text-[10px] md:text-xs font-mono uppercase tracking-widest rounded-full whitespace-nowrap shadow-lg">
-                                    R&D Innovation
+                                    Research, Development & Innovation
                                 </div>
                             </div>
                         </div>

@@ -136,7 +136,7 @@ const Hero = () => {
                         ref={descRef}
                         className="text-[#94a3b8] text-base md:text-xl max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed"
                     >
-                        We build real robotics and hardware solutions by turning Africa's best engineers into a competitive R&D engine.
+                        We build real robotics and hardware solutions by turning Africa's best engineers into a competitive Research, Development & Innovation engine.
                     </p>
 
                     {/* CTA Buttons */}
