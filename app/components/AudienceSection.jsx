@@ -7,7 +7,7 @@ import { GraduationIcon, UniversityIcon, TargetIcon, GovernmentIcon, ChartIcon }
 const audiences = [
     {
         icon: GraduationIcon,
-        title: "Students & Engineers",
+        title: "Engineers & Researchers",
         description: "Build real robots, gain exposure, and launch startups"
     },
     {
@@ -23,7 +23,7 @@ const audiences = [
     {
         icon: GovernmentIcon,
         title: "Governments & Institutions",
-        description: "Retain talent and grow local innovation"
+        description: "Deploy smart infrastructure and grow local innovation"
     },
     {
         icon: ChartIcon,

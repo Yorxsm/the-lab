@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
   {
     question: "What does eXhibot do?",
-    answer: "We're Africa's robotics innovation studio. We connect talented engineers and creators with real-world challenges—delivering practical robotics, IoT, and automation solutions for enterprise and government clients. Events are the pipeline; products are the business."
+    answer: "We're Africa's robotics innovation studio. We engineer and deploy practical robotics, IoT, and automation solutions for enterprise and government clients. Research is our pipeline; products are our business."
   },
   {
     question: "Who are your clients?",
@@ -14,19 +14,19 @@ const faqs = [
   },
   {
     question: "How does your business model work?",
-    answer: "We operate a 'talent-as-a-service' model with per-project revenue. Companies & governments pay per solution through custom R&D contracts. We also generate IP licensing royalties and equity in successful products. Future: exhibot.ng as a marketplace for challenges + solutions."
+    answer: "We build and deploy deep-tech solutions with per-project revenue. Companies & governments pay for custom engineering and product development. We also generate IP licensing royalties and retain equity in our proprietary hardware."
   },
   {
     question: "What solutions do you deliver?",
-    answer: "NFC bracelet systems (access, identity, payments), smart infrastructure prototypes, automation and monitoring devices, custom robotics MVPs, and patent-ready IP. All built specifically for African contexts."
+    answer: "We deliver custom hardware (NFC systems, IoT devices, robotics MVPs), proprietary IP and patents, and Jence.xyz—our global hardware engineering publication. We bridge the gap between initial research and market-ready products."
   },
   {
-    question: "How is eXhibot different from other accelerators?",
-    answer: "Unlike software-focused accelerators or student-only robotics contests, we're engineered for practical deployment. BattleBots = entertainment only. FIRST Robotics = education only. eXhibot = Entertainment + Innovation + IP. We pitch products, not papers."
+    question: "How is eXhibot different from other firms?",
+    answer: "Unlike traditional tech hubs (SaaS-focused) or university labs (academic-only), we provide the physical infrastructure and engineering execution to move 'From Lab to Market.' We combine local R&D depth with the speed of an overseas ODM, keeping all IP and value in-house."
   },
   {
     question: "How can I partner with eXhibot?",
-    answer: "We welcome partnerships from enterprises needing solutions, governments with digital transformation goals, universities contributing talent, and investors backing Africa's hardware revolution. Reach out at joel@exhibot.ng."
+    answer: "We welcome partnerships from enterprises needing custom hardware solutions, governments executing digital transformation goals, and investors backing Africa's hardware revolution. Reach out at joel@exhibot.ng."
   }
 ];
 

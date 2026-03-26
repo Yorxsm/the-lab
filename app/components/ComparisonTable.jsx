@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import { UsersIcon, BoltIcon, GlobeIcon, CoinIcon } from './icons';
 
 const competitors = [
-    { name: "BattleBots", type: "Entertainment first", desc: "No commercialization", product: false, ip: false },
-    { name: "FIRST Robotics", type: "Education first", desc: "IP remains academic", product: true, ip: false },
-    { name: "Accelerators", type: "Software-optimized", desc: "Hardware light", product: true, ip: false },
+    { name: "Traditional Tech Hubs", type: "Space & SaaS first", desc: "No deep-tech infrastructure", product: false, ip: false },
+    { name: "University Labs", type: "Academic first", desc: "Slow commercialization", product: false, ip: true },
+    { name: "Overseas ODMs", type: "Execution only", desc: "No local research or context", product: true, ip: false },
 ];
 
 const exhibot = {
@@ -18,7 +18,7 @@ const exhibot = {
 };
 
 const advantages = [
-    { icon: UsersIcon, title: "Untapped Talent", stat: "300+", desc: "Engineers onboarded" },
+    { icon: UsersIcon, title: "Product Focus", stat: "100%", desc: "Solutions delivered" },
     { icon: BoltIcon, title: "Competitive Edge", stat: "3x", desc: "Faster iteration" },
     { icon: GlobeIcon, title: "Local Solutions", stat: "100%", desc: "Built for Africa" },
     { icon: CoinIcon, title: "Cost Advantage", stat: "60%", desc: "Lower R&D costs" },
@@ -40,7 +40,7 @@ const ComparisonTable = () => {
                     <span className="pill-tag mb-4 md:mb-6 inline-block">The Difference</span>
                     <h2 className="font-display text-3xl md:text-5xl lg:text-6xl leading-tight text-[#0a0a0a] mb-4">
                         Others Give Trophies.<br />
-                        <span className="text-[#ff6b35]">We Build Careers.</span>
+                        <span className="text-[#ff6b35]">We Build Solutions.</span>
                     </h2>
                     <p className="text-[#64748b] text-base md:text-lg max-w-2xl mx-auto px-4">
                         This is not entertainment. This is a <strong className="text-[#0a0a0a]">deep-tech services and IP company.</strong>

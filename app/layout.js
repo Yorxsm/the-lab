@@ -16,7 +16,7 @@ const robotoMono = Roboto_Mono({
 
 export const metadata = {
   title: "eXhibot | Africa's Hardware Innovation Studio",
-  description: "Connecting elite engineering talent to real-world opportunities. eXhibot builds robotics, IoT, and hardware solutions for enterprises and governments.",
+  description: "Building robotics, IoT, and hardware solutions for enterprises and governments.",
   keywords: ["Robotics", "Hardware", "Africa", "Innovation", "IoT", "Engineering", "Tech Studio", "Nigeria", "Exhibit"],
   authors: [{ name: "eXhibot" }],
   openGraph: {

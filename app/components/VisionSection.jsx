@@ -19,7 +19,7 @@ const milestones = [
     {
         year: "2027",
         title: "Expand",
-        description: "Expand to Kenya & Ghana. Pan-African talent network.",
+        description: "Expand to Kenya & Ghana. Pan-African engineering network.",
         status: "upcoming"
     },
     {

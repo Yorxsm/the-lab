@@ -6,17 +6,17 @@ import { motion } from 'framer-motion';
 const steps = [
     {
         number: "01",
-        title: "Find Talent",
-        description: "We run competitions and incubators to discover Africa's best engineering minds."
+        title: "Research",
+        description: "We run specialized R&D programs to develop and prototype Africa's next generation of hardware technology."
     },
     {
         number: "02",
-        title: "Build Products",
+        title: "Build",
         description: "Our teams take on real challenges from businesses—designing, building, and deploying solutions."
     },
     {
         number: "03",
-        title: "Launch Startups",
+        title: "Distribute",
         description: "The best projects become companies, with patents and equity that stay in African hands."
     }
 ];
@@ -44,10 +44,10 @@ const SolutionSection = () => {
                 >
                     <span className="pill-tag mb-4 md:mb-6 inline-block">Operations</span>
                     <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-[#0a0a0a] break-words">
-                        <span className="block sm:inline">From Competitions</span>
+                        <span className="block sm:inline">From Lab</span>
                         <span className="hidden sm:inline"><br /></span>
                         <span className="sm:hidden"> </span>
-                        to <span className="text-[#ff6b35]">Companies.</span>
+                        to <span className="text-[#ff6b35]">Market.</span>
                     </h2>
                 </motion.div>
 

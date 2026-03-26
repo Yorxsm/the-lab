@@ -33,8 +33,8 @@ const AboutSection = () => {
                                 </span>
 
                                 <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-[#0a0a0a] mb-6 md:mb-8 break-words">
-                                    Connecting Talent<br />
-                                    to <span className="text-[#ff6b35]">Opportunity.</span>
+                                    Building Real<br />
+                                    <span className="text-[#ff6b35]">Solutions.</span>
                                 </h2>
 
                                 <div className="space-y-6 text-[#64748b] text-sm sm:text-base md:text-lg leading-relaxed">
@@ -42,7 +42,7 @@ const AboutSection = () => {
                                         <span className="w-1 bg-[#e2e8f0] rounded-full flex-shrink-0 mt-1" />
                                         <div>
                                             <p className="font-display text-[#0a0a0a] mb-2 text-sm md:text-base">The Reality</p>
-                                            <p>Africa is full of brilliant minds, but they often lack the right tools and labs to build real hardware. Meanwhile, local companies spend huge amounts importing solutions.</p>
+                                            <p>Africa has the engineering capacity to build, but local companies and governments still spend huge amounts importing essential hardware solutions.</p>
                                         </div>
                                     </div>
 
@@ -50,7 +50,7 @@ const AboutSection = () => {
                                         <span className="w-1 bg-[#ff6b35] rounded-full flex-shrink-0 mt-1" />
                                         <div>
                                             <p className="font-display text-[#0a0a0a] mb-2 text-sm md:text-base">The Solution</p>
-                                            <p>eXhibot fills that gap. We take the best engineers and give them the resources to build robots, smart devices, and automation systems that solve real problems.</p>
+                                            <p>eXhibot changes that narrative. We are a deep-tech company engineering and deploying robots, smart devices, and automation systems that solve African problems natively.</p>
                                         </div>
                                     </div>
                                 </div>

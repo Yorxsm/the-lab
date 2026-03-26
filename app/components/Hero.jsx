@@ -134,20 +134,10 @@ const Hero = () => {
                     {/* Description */}
                     <p
                         ref={descRef}
-                        className="text-[#94a3b8] text-base md:text-xl max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed"
+                        className="text-[#94a3b8] text-base md:text-xl max-w-2xl mx-auto md:mb-10 leading-relaxed"
                     >
-                        We build real robotics and hardware solutions by turning Africa's best engineers into a competitive Research, Development & Innovation engine.
+                        We are a deep-tech engineering studio. We research, build, and deploy custom robotics, IoT, and smart hardware solutions for enterprise and government clients.
                     </p>
-
-                    {/* CTA Buttons */}
-                    <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="#ecosystem" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 bg-[#ff6b35] text-white font-display font-semibold rounded-md hover:bg-[#e55a2a] transition-colors text-sm md:text-base">
-                            See Operations
-                        </a>
-                        <a href="mailto:joel@exhibot.ng?subject=Partnership%20Inquiry%20-%20eXhibot%20NG&body=Hello%20eXhibot%20Team%2C%0A%0AI%20am%20reaching%20out%20to%20explore%20a%20potential%20partnership%20opportunity.%0A%0AAbout%20Me%2FMy%20Organization%3A%0A-%20Name%3A%20%0A-%20Organization%3A%20%0A-%20Role%3A%20%0A%0APartnership%20Interest%3A%0A%E2%96%A1%20Sponsorship%0A%E2%96%A1%20University%20Partnership%0A%E2%96%A1%20Government%2FInstitutional%20Collaboration%0A%E2%96%A1%20Custom%20Robotics%20Project%0A%E2%96%A1%20Investment%20Opportunity%0A%E2%96%A1%20Other%0A%0AProject%20Details%2FMessage%3A%0A%0A%0A%0ALooking%20forward%20to%20hearing%20from%20you.%0A%0ABest%20regards" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 bg-transparent text-white font-display font-semibold border-2 border-white/30 rounded-md hover:bg-white/10 hover:border-white/50 transition-all text-sm md:text-base">
-                            Partner With Us
-                        </a>
-                    </div>
                 </div>
             </div>
 

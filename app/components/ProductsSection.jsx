@@ -54,21 +54,15 @@ const ProductsSection = () => {
                         className="col-span-12 lg:col-span-8 row-span-2 group"
                     >
                         <div className="relative h-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px] rounded-3xl overflow-hidden border border-white/10">
-                            {/* Video Background */}
+                            {/* Image Background */}
                             <div className="absolute inset-0">
-                                <iframe
-                                    width="100%"
-                                    height="100%"
-                                    src="https://www.youtube.com/embed/_nYZW9wfKhs?autoplay=1&mute=1&loop=1&playlist=_nYZW9wfKhs&controls=0&showinfo=0&playsinline=1&rel=0&modestbranding=1"
-                                    title="eXhibot.app Demo"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    playsInline
-                                    className="w-full h-full object-cover scale-150 md:scale-110"
+                                <img
+                                    src="/images/jence.png"
+                                    alt="Jence Platform"
+                                    className="w-full h-full object-cover"
                                 />
                                 {/* Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent" />
                             </div>
 
                             {/* Content */}
@@ -77,10 +71,10 @@ const ProductsSection = () => {
                                 <div className="flex items-start justify-between">
                                     <div className="flex items-center gap-3">
                                         <span className="w-2 h-2 md:w-3 md:h-3 bg-[#10b981] rounded-full animate-pulse" />
-                                        <span className="text-white/60 font-mono text-[10px] md:text-xs uppercase tracking-widest">Live System</span>
+                                        <span className="text-white/60 font-mono text-[10px] md:text-xs uppercase tracking-widest">Live Platform</span>
                                     </div>
                                     <a
-                                        href="https://exhibot.app"
+                                        href="https://jence.xyz"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-[#0a0a0a] transition-all group-hover:scale-110"
@@ -92,13 +86,13 @@ const ProductsSection = () => {
                                 {/* Bottom */}
                                 <div>
                                     <h3 className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white mb-2 md:mb-3">
-                                        eXhibot.app
+                                        Jence.xyz
                                     </h3>
                                     <p className="text-white/60 text-sm md:text-lg max-w-lg mb-4 md:mb-6 leading-relaxed">
-                                        Exhibot is a creator platform that combines digital profiles, NFC sharing, and direct fan communication.
+                                        Jence is a global robotics and hardware engineering publication. It delivers deep technical articles, teardowns, security research, and field notes from builders across the stack.
                                     </p>
                                     <div className="flex flex-wrap gap-2">
-                                        {['NFC Systems', 'Identity', 'Payments', 'Events'].map((tag, i) => (
+                                        {['Publication', 'Deep Tech', 'Hardware Research'].map((tag, i) => (
                                             <span key={i} className="px-2 py-1 md:px-3 md:py-1 bg-white/10 backdrop-blur-sm text-white/80 text-[10px] md:text-xs rounded-full border border-white/10">
                                                 {tag}
                                             </span>
@@ -123,8 +117,11 @@ const ProductsSection = () => {
                                 <span className="font-mono text-[10px] uppercase tracking-widest text-[#ff6b35]">In Development</span>
                             </div>
                             <div>
-                                <h4 className="font-display text-xl md:text-2xl text-white mb-2">Smart Infrastructure</h4>
-                                <p className="text-white/50 text-xs md:text-sm">IoT monitoring for utilities, manufacturing, and logistics.</p>
+                                <h4 className="font-display text-xl md:text-2xl text-white mb-2 flex items-center gap-2">
+                                    Smart Robot System
+                                    <span className="bg-white/20 text-transparent blur-sm selcted-none px-1 rounded text-sm w-20 inline-block text-center mr-1">██</span>
+                                </h4>
+                                <p className="text-white/50 text-xs md:text-sm">Redacted system specifications for enterprise.</p>
                             </div>
                         </div>
                     </motion.div>
@@ -160,7 +157,7 @@ const ProductsSection = () => {
                 >
                     <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-8">
                         <p className="text-white/60 text-sm max-w-md text-center md:text-left">
-                            <span className="text-white font-medium">Events are the pipeline.</span> Products are the business. We help engineers build and own what they create.
+                            <span className="text-white font-medium">Research gives us the edge.</span> Products are the business. We help engineers build and own what they create.
                         </p>
                         <div className="flex gap-8 md:gap-12 w-full md:w-auto justify-center md:justify-end">
                             <div className="text-center">
