@@ -46,7 +46,7 @@ const ProductsSection = () => {
                 <div className="grid grid-cols-12 gap-4 md:gap-6">
 
                     {/* Main Product - Spans 8 cols, 2 rows */}
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -54,20 +54,16 @@ const ProductsSection = () => {
                         className="col-span-12 lg:col-span-8 row-span-2 group"
                     >
                         <div className="relative h-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px] rounded-3xl overflow-hidden border border-white/10">
-                            {/* Image Background */}
                             <div className="absolute inset-0">
                                 <img
                                     src="/images/jence.png"
                                     alt="Jence Platform"
                                     className="w-full h-full object-cover"
                                 />
-                                {/* Overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent" />
                             </div>
 
-                            {/* Content */}
                             <div className="absolute inset-0 p-6 md:p-12 flex flex-col justify-between">
-                                {/* Top */}
                                 <div className="flex items-start justify-between">
                                     <div className="flex items-center gap-3">
                                         <span className="w-2 h-2 md:w-3 md:h-3 bg-[#10b981] rounded-full animate-pulse" />
@@ -83,7 +79,6 @@ const ProductsSection = () => {
                                     </a>
                                 </div>
 
-                                {/* Bottom */}
                                 <div>
                                     <h3 className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white mb-2 md:mb-3">
                                         Jence.xyz
@@ -101,7 +96,7 @@ const ProductsSection = () => {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
 
                     {/* Secondary Products - Right Column */}
                     <motion.div
@@ -164,10 +159,10 @@ const ProductsSection = () => {
                                 <p className="font-display text-2xl md:text-4xl text-[#ff6b35]">10+</p>
                                 <p className="text-white/40 text-[10px] md:text-xs font-mono uppercase tracking-widest">Prototypes</p>
                             </div>
-                            <div className="text-center">
+                            {/* <div className="text-center">
                                 <p className="font-display text-2xl md:text-4xl text-white">1</p>
                                 <p className="text-white/40 text-[10px] md:text-xs font-mono uppercase tracking-widest">Live Platform</p>
-                            </div>
+                            </div> */}
                             <div className="text-center">
                                 <p className="font-display text-2xl md:text-4xl text-white">∞</p>
                                 <p className="text-white/40 text-[10px] md:text-xs font-mono uppercase tracking-widest">Potential</p>
