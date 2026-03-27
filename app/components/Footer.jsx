@@ -14,7 +14,7 @@ const Footer = () => {
             </a>
             <p className="text-[#64748b] text-sm md:text-base mb-6 leading-relaxed">
               Africa's hardware innovation engine. We turn world-class engineering into deployed solutions for enterprise and government.
-            </p>fluffypoly/settings
+            </p>
             <p className="text-[#94a3b8] text-xs font-mono">
               Based in Lagos, Nigeria.
             </p>
