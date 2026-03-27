@@ -14,7 +14,7 @@ const Footer = () => {
             </a>
             <p className="text-[#64748b] text-sm md:text-base mb-6 leading-relaxed">
               Africa's hardware innovation engine. We turn world-class engineering into deployed solutions for enterprise and government.
-            </p>
+            </p>fluffypoly/settings
             <p className="text-[#94a3b8] text-xs font-mono">
               Based in Lagos, Nigeria.
             </p>
@@ -54,9 +54,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-[#e2e8f0] flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="p              {/* Social Icons could go here */}
+t-8 border-t border-[#e2e8f0] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[#94a3b8] text-xs md:text-sm text-center md:text-left">
-            © {new Date().getFullYear()} eXhibot NG. All rights reserved.
+            © {new Date().getFullYear()} Exhibot Technologies. All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
